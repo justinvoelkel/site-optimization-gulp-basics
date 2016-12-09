@@ -1,0 +1,17 @@
+{
+  "name":"gulp-basics",
+  "description":"A basic example of how to install gulp and perform site optimization techniques.",
+  "author":{
+    "name":"Justin Voelkel",
+    "email":"justin@cinpleweb.com"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^3.1.0",
+    "gulp-clean-css": "^2.2.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.0"
+  }
+}
