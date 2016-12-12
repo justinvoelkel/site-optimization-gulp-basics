@@ -1,6 +1,3 @@
-/**
- * Created by justin on 3/25/2015.
- */
 var gulp = require('gulp');
 
 var minifyCSS   = require('gulp-clean-css');
@@ -16,9 +13,9 @@ gulp.task('styles',function(){
     ];
     return gulp.src(stylesSrc)
         .pipe(sass())
-        .pipe(concat('main.css'))
+        .pipe(concat('dev.css'))
         .pipe(gulp.dest('./styles/production/'))
-        .pipe(rename('main.min.css'))
+        .pipe(rename('prod.min.css'))
         .pipe(minifyCSS())
         .pipe(gulp.dest('./styles/production/'));
 });
@@ -31,9 +28,9 @@ gulp.task('scripts',function(){
 
     ];
     gulp.src(scriptSrc)
-        .pipe(concat('main.js'))
+        .pipe(concat('dev.js'))
         .pipe(gulp.dest('./js/production/'))
-        .pipe(rename('main.min.js'))
+        .pipe(rename('prod.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('./js/production/'));
 });
